@@ -7,6 +7,6 @@ configMapGenerator:
   - name: podinfo
     namespace: flux-system
     files:
-      - values.yaml
+      - kustomize/values.yaml
 configurations:
   - kustomizeconfig.yaml
