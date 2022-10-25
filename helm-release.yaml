@@ -12,6 +12,7 @@ spec:
       sourceRef:
         kind: GitRepository
         name: podinfo
+        namespace: flux-system
   valuesFrom:
     - kind: ConfigMap
       name: podinfo-values
