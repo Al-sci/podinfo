@@ -6,6 +6,6 @@ resources:
 configMapGenerator:
   - name: podinfo-values
     files:
-      - ./charts/podinfo/values.yaml
+      - values.yaml
 configurations:
   - kustomizeconfig.yaml
