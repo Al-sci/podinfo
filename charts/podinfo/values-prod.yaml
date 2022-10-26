@@ -2,6 +2,7 @@
 # Includes Redis deployment and memory limits.
 
 replicaCount: 1
+maxReplicas: 8
 logLevel: info
 backend: #http://backend-podinfo:9898/echo
 backends: []
