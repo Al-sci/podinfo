@@ -4,9 +4,8 @@ namespace: flux-system
 resources:
   - helm-release.yaml
 configMapGenerator:
-  - name: podinfo
-    namespace: flux-system
+  - name: podinfo-values
     files:
-      - kustomize/values.yaml
+      - ./kustomize/values.yaml
 configurations:
   - kustomizeconfig.yaml
