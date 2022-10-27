@@ -7,6 +7,7 @@ metadata:
 spec:
   {{- if not .Values.hpa.enabled }}
   replicas: {{ .Values.replicaCount }}
+  maxReplicas: {{ .Values.maxReplicas }}
   {{- end }}
   strategy:
     type: RollingUpdate
